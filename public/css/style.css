@@ -1,0 +1,95 @@
+a, u {
+    text-decoration: none;
+}
+html, body {
+	background-color: #000;
+	height: 100%;
+	overflow: hidden;
+}
+.mainWrapper {
+	background-color: 	 #542563;
+	height: 100%;
+	width: 90%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.mainWrapper .titleDiv {
+	font-family: 'Gilda Display', cursive;
+	text-align: center;
+	font-size: 50px;
+	color:#FFF;
+}
+
+.mainWrapper #mainContainer {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 80%;
+	background-color: #F0F0F0;
+	height: 83%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.button{
+	width: 40%;
+	height: 20%;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family:'The Girl Next Door', cursive;
+	background-color: #9C3;
+	text-align: center;
+	float: left;
+	margin-top: 20%;
+	margin-bottom: 20%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.mainWrapper #mainContainer .createCanvasWrapper .info {
+}
+.mainWrapper #mainContainer .createCanvasWrapper #jmolContainer {
+	background-color: #666;
+	height: 80%;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.mainWrapper #mainContainer .buttonsContainer {
+	height:100%;
+	width:100%;;
+}
+.mainWrapper #mainContainer .createCanvasWrapper {
+	height: 100%;
+	width: 100%;
+}
+.mainWrapper #mainContainer .createCanvasWrapper .info {
+	font-family:'The Girl Next Door', cursive;
+	text-align: center;
+	font-weight: bolder;
+}
+.mainWrapper #mainContainer .createCanvasWrapper #gameURL {
+	font-family:'The Girl Next Door', cursive;
+	text-align: center;
+}
+.mainWrapper #mainContainer .createCanvasWrapper #spanNewGameCode {
+	font-family:'The Girl Next Door', cursive;
+	text-align: center;
+}
+.mainWrapper #mainContainer .joinCanvasWrapper .info {
+	text-align: center;
+
+}
+.mainWrapper #mainContainer .joinCanvasWrapper {
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	display: table;
+}
+.mainWrapper #mainContainer .joinCanvasWrapper #joinCanvasAlign {
+	 display: table-cell;
+    vertical-align: middle;
+}
+
