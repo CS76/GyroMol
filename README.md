@@ -27,6 +27,11 @@ http://socket.io/
 Nearly all smart phones on the market have some sort of accelerometer or gyroscope in them. The phone parses this information and makes it accessible in the browser. The HTML5 DeviceOrienation and DeviceMotion events allow us to take advantage of this.
 http://www.html5rocks.com/en/tutorials/device/orientation/
 
+<b>JSmol</b><br />
+JSmol is the extension of the Java-based molecular visualization applet Jmol (jmol.sourceforge.net) onto JavaScript-only platforms (HTML5 with or without WebGL). It can be used in conjunction with the Jmol applet to provide an alternative to the Jmol applet when the platform does not support Java (iPhone/iPad) or does not support applets (Android). Used in conjunction with the Jmol JavaScript Object (http://wiki.jmol.org/index.php/Jmol_Javascript_Object), JSmol seamlessly offers alternatives to Jmol on these non-Applet platforms.
+http://sourceforge.net/projects/jsmol/
+
+
 <h3>To Install/Setup</h3>
 <ul>
 <li>Ensure Node.js is installed</li>
