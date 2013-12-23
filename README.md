@@ -6,6 +6,7 @@ A Node.js and Socket.IO implementation that lets you to use your smart phone(gyr
 <h3>Concept</h3>
 To be able handle(3D rotation, Zoom etc) molecules on a desktop ( laptop / iPad etc. something with a bigger screen) that multiple users can see using  a physically disconnected device (Smart Phone). Once a screen is initialized, an user connects to a specific URL in their phone browser that links them to that Jmol canvas instance. 
 
+
 <h3>Basic outline:</h3> 
     Register new connections to the server and decide if it is a Canvas or User gyro instance:
     Create a new connection pair(room)
