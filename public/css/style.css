@@ -5,57 +5,82 @@ html, body {
 	background-color: #000;
 	height: 100%;
 	overflow: hidden;
+	background-image: url(images/dvsup.png);
+	z-index: -10;
 }
 .mainWrapper {
-	background-color: 	 #542563;
+	background-color: 	 #CCC;
 	height: 100%;
-	width: 90%;
+	width: 87%;
 	position: absolute;
 	top:0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
+	background-image: url(../images/graphy.png);
 }
 .mainWrapper .titleDiv {
-	font-family: 'Gilda Display', cursive;
+	font-family: 'Fredericka the Great', cursive;
 	text-align: center;
-	font-size: 50px;
-	color:#FFF;
+	font-size: 70px;
+	color:#000;
+	height: 20%;
 }
 
 .mainWrapper #mainContainer {
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	width: 80%;
-	background-color: #F0F0F0;
-	height: 83%;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.button{
-	width: 40%;
-	height: 20%;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	font-family:'The Girl Next Door', cursive;
-	background-color: #9C3;
+	width: 75%;
+	height: 89%;
+	top: 11%;
+	position: absolute;
+	background-image: url(../images/vintagepaperscanstrio.png);
+	background-size: 100% 100%;
 	text-align: center;
-	float: left;
-	margin-top: 20%;
-	margin-bottom: 20%;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	right: 12%;
+}
+.icons {
+	background-color: #F00;
+	width: 20%;
+	height: 60%;
+	position: relative;
+	float: right;
+	margin-right: 4%;
+	vertical-align: bottom;
+}
+
+
+.button{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 40%;
+	height: 25%;
+	font-family: 'Bilbo', cursive;
+	background-color: #525252;
+	text-align: center;
+	margin-top: 13%;
 	margin-right: 5%;
 	margin-left: 5%;
+	font-size: xx-large;
+	color: #FFF;
+	font-weight: bold;
 }
 .mainWrapper #mainContainer .createCanvasWrapper .info {
+	float: left;
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-family: 'Bad Script', cursive;
+	font-weight: bold;
 }
 .mainWrapper #mainContainer .createCanvasWrapper #jmolContainer {
 	background-color: #666;
-	height: 80%;
+	height: 75%;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 5%;
 }
 .mainWrapper #mainContainer .buttonsContainer {
 	height:100%;
@@ -65,18 +90,25 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
-.mainWrapper #mainContainer .createCanvasWrapper .info {
-	font-family:'The Girl Next Door', cursive;
-	text-align: center;
-	font-weight: bolder;
-}
 .mainWrapper #mainContainer .createCanvasWrapper #gameURL {
-	font-family:'The Girl Next Door', cursive;
+	font-family: 'Bad Script', cursive;
 	text-align: center;
+	float: left;
+	clear: right;
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-weight: bold;
 }
 .mainWrapper #mainContainer .createCanvasWrapper #spanNewGameCode {
-	font-family:'The Girl Next Door', cursive;
+	font-family: 'Bad Script', cursive;
 	text-align: center;
+	float: left;
+	clear: right;
+	margin-left: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-weight: bold;
 }
 .mainWrapper #mainContainer .joinCanvasWrapper .info {
 	text-align: center;
@@ -92,4 +124,3 @@ html, body {
 	 display: table-cell;
     vertical-align: middle;
 }
-
