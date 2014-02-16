@@ -55,7 +55,7 @@ jQuery(function($){
 
         cacheElements: function () {
             App.$doc = $(document);
-            App.$canvasArea = $('#mainContainer');
+            App.$canvasArea = $('#mainBody');
             App.$templateIntroScreen = $('#intro-screen-template').html();
             App.$templateNewCanvas = $('#create-canvas-template').html();
             App.$templateJoinCanvas = $('#join-canvas-template').html();
@@ -69,7 +69,7 @@ jQuery(function($){
             App.$doc.on('click', '#btnCreateCanvas', App.Host.onCreateClick);
             // Player
             App.$doc.on('click', '#btnJoinCanvas', App.Player.onJoinClick);
-            App.$doc.on('click', '#btnStart', App.Player.onPlayerStartClick);
+			App.$doc.on('click', '#btnStart', App.Player.onPlayerStartClick);
         },
 
         showInitScreen: function() {
@@ -109,16 +109,18 @@ jQuery(function($){
             displayNewCanvasScreen : function() {
                 App.$canvasArea.html(App.$templateNewCanvas);
        
-                var width1 = $("#jmolContainer").width();
-                var height1 = $("#jmolContainer").height();
-       
-       
+                var width1 = $("#jsmolContainer").width();
+                var height1 = $("#jsmolContainer").height();
+				
+				console.log(width1,height1);
+				
+				
                 Jmol.setDocument(false);
                 Jmol.getApplet("myJmol", Info);
        
        
-                $("#jmolContainer").html(Jmol.getAppletHtml(myJmol));
-       Jmol.resizeApplet(myJmol, [width1,height1]);
+                $("#jsmolContainer").html(Jmol.getAppletHtml(myJmol));
+				Jmol.resizeApplet(myJmol, [width1,height1]);
        
                 $('#gameURL').text(window.location.href);
                 $('#spanNewGameCode').text(App.canvasId);
@@ -128,7 +130,7 @@ jQuery(function($){
                 if ( App.Host.isNewCanvas ) {
                     App.Host.displayNewCanvasScreen();
                 }
-		
+				
                 $('#playersWaitingMessage').html(App.$gyroEvent);
                 $('#jmolDiv').append(App.$hostJmolCanvas);
        
@@ -204,9 +206,8 @@ jQuery(function($){
                     playerName : $('#inputPlayerName').val() || 'anon'
                 };
 		
-                console.log(data);
-
                 IO.socket.emit('playerJoinCanvas', data);
+				console.log(data);
                 App.myRole = 'Player';
                 App.Player.myName = data.playerName;
             },
@@ -219,6 +220,7 @@ jQuery(function($){
                 App.myRole = 'Player';
                 App.canvasId = data.canvasId;
                 $('#playerWaitingMessage').html(App.$gyroEvent);
+				
                 calculateValues(IO.socket);
                 }
             }
