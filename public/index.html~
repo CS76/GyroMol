@@ -125,6 +125,9 @@ debug: false
 <!-- jQuery! -->
 <script src="libs/jquery-2.0.2.min.js"></script>
 
+<!-- FastClick is used to eliminate the 300ms delay when clicking items on a mobile device https://github.com/ftlabs/fastclick -->
+<script src="libs/fastclick.js"></script>
+
 <!-- If Socket.IO is used with Express, then the /socket.io/ path will serve the proper Socket.IO javascript files used by the browser -->
 <script src="/socket.io/socket.io.js"></script>
                 
