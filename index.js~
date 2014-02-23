@@ -13,7 +13,7 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(port);
 
 io.sockets.on('connection', function (socket) {
     jgh.initHandler(io, socket);
