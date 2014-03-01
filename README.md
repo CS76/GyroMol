@@ -1,6 +1,20 @@
 GyroMol
 =======
+http://gyromol.herokuapp.com/
 
+1) Open the above page on your laptop/desktop(any large screen) and then click <b>CREATE</b>. A Canvas* instance is created.<br>
+2) Open the same site in you mobile web browser(you can use the QR code on the screen to get there) and then click <b>CONNECT</b>.<br>
+3) Enter the canvas ID from the above canvas in the input box in your mobile web page and then click <b>CONNECT</b>.<br>
+
+<p>Your mobile is now connected to the jsmol object(molecule). Rotate your mobile phone and you can see the molecule also rotates with it :)</p>
+
+Please send your suggestions/feedback to mailcs76@gmail.com
+
+Although its not perfect we can go from here....
+Know issues..<br>
+->Lag between the mobile device rotation and the molecule's rotation.
+
+======================================================================================================================
 A Node.js and Socket.IO implementation that lets you to use your smart phone(gyroscope) to rotate Jmol-Objects ( Molecules) in 3D on a larger screen
 
 <h3>Concept</h3>
